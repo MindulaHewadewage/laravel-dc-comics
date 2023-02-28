@@ -1,0 +1,36 @@
+.comics-jumbo{
+background-image: url('../img/jumbotron.jpg');
+height: 350px;
+background-position: top;
+}
+
+.comics-card-section{
+    background-color: $darkgrey;
+    color: white;
+    padding: 40px 0;
+
+    .comics-card-deck{
+
+        display: flex;
+        flex-wrap: wrap;
+    
+    
+        .card{
+            flex-basis:calc(100% / 6);
+            img{
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+            p{
+                font-size: 12px;
+                text-transform: uppercase;
+                padding:10px 0;
+            }
+        }
+    
+    }
+}
+
+
+
