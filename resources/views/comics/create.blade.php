@@ -3,21 +3,59 @@
 @section('title','comics')
 
 @section('content')
-<form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<div class="container">
+<form action="{{route('comics.store')}}" method="POST">
+    <hr>
+    <div class="row">
+
+    <div class="mb-3 col-12">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title">
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+
+    <div class="mb-3 col-12">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description"></textarea>
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+    <div class="mb-3 col-12">
+        <label for="thumb" class="form-label">Thumb</label>
+        <input type="url" class="form-control" id="thumb">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="mb-3 col-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-control" id="price">
+    </div>
+
+    <div class="mb-3 col-3">
+        <label for="series" class="form-label">series</label>
+        <input type="text" class="form-control" id="series">
+    </div>
+
+    <div class="mb-3 col-3">
+        <label for="sale_date" class="form-label">Sale Date</label>
+        <input type="date" class="form-control" id="sale_date">
+    </div>
+
+    <div class="mb-3 col-3">
+        <label for="type" class="form-label">Type</label>
+        <input type="text" class="form-control" id="type">
+    </div>
+
+    <div class="mb-3 col-6">
+        <label for="artists" class="form-label">Artists</label>
+        <textarea class="form-control" id="artists"></textarea>
+    </div>
+
+    <div class="mb-3 col-6">
+        <label for="writers" class="form-label">Writers</label>
+        <textarea class="form-control" id="writers"></textarea>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary my-3">Add Comic</button>
   </form>
+
+</div>
 
 @endsection
