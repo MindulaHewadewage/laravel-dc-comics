@@ -8,7 +8,7 @@
 <div class="comics-card-section">
 <div class="comics-card-deck container">
     @foreach($comics as $comic)
-        <div class="card">
+        <div class="comic-card">
             <a href="{{route('comics.show',$comic->id)}}"><img src="{{$comic['thumb']}}" alt="{{$comic['title']}}"></a> 
             <p>{{$comic['title']}}</p>
         </div>
