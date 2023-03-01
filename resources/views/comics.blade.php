@@ -3,7 +3,7 @@
 @section('title','comics')
 
 
-{{-- @section('content')
+@section('content')
 <div class="comics-jumbo"></div>
 <div class="comics-card-section">
 <div class="comics-card-deck container">
@@ -17,4 +17,4 @@
 </div>
 
 
-@endsection --}}
+@endsection

@@ -9,9 +9,12 @@
     </div>
     <div class="menu">
     <ul>
-        @foreach($links as $link)
-        <li><a href="{{route($link['route_name'])}}">{{$link['text']}}</a></li>
-        @endforeach
+        <li>
+            <a class="@if(Route::is('home')) active @endif" href="{{url('/')}}">Home</a>
+        </li>
+        <li>
+            <a class="@if(Route::is('comics.index')) active @endif" href="{{route('comics.index')}}">Comics</a>
+        </li>
     </ul>
     </div>
     <div class="search">
