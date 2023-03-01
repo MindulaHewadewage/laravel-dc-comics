@@ -1,0 +1,31 @@
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .section-comic-description{
+        flex-basis: 60%;
+        padding: 40px 0;
+
+        .comic-title{
+            text-transform: uppercase;
+            color: darkblue;
+            padding-bottom: 20px;
+        }
+
+        .comic-price{
+            background-color: #55BA59;
+            color: white;
+            padding: 15px;
+            
+        }
+
+        .comic-description{
+            padding-top: 20px;
+        }
+    }
+
+    .ad{
+        flex-basis: 30%;
+    }
+}
