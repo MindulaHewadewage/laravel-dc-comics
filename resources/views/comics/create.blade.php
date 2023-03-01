@@ -5,6 +5,7 @@
 @section('content')
 <div class="container">
 <form action="{{route('comics.store')}}" method="POST">
+    @csrf
     <hr>
     <div class="row">
 
