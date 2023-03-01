@@ -1,4 +1,4 @@
-.description{
+.comic-preview{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,6 +6,14 @@
     .section-comic-description{
         flex-basis: 60%;
         padding: 40px 0;
+        position: relative;
+
+        .img-preview{
+            width: 150px;
+            height: 200px;
+            position: absolute;
+            bottom: 95%;
+        }
 
         .comic-title{
             text-transform: uppercase;
@@ -28,4 +36,32 @@
     .ad{
         flex-basis: 30%;
     }
+}
+
+
+
+
+.light-bg{
+    background-color: rgb(238, 238, 238);
+}
+
+.comic-spec-table {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    
+}
+
+.talent{
+    flex-basis: 50%;
+}
+
+.specs{
+    flex-basis: 50%;
+}
+
+.table-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: darkblue;
 }
