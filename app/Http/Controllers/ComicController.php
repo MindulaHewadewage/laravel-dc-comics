@@ -70,6 +70,7 @@ class ComicController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        return to_route('comics.index');
     }
 }

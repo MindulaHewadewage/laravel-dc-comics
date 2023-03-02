@@ -60,6 +60,7 @@
 
 <div class="buttons d-flex justify-content-center">
   <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+    @method('PATCH')
     @csrf
     <button type="submit" class="btn btn-warning">Elimina</button>
   </form>
