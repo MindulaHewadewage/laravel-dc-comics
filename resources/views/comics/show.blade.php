@@ -65,8 +65,8 @@
   </form>
 
 
-  <a href="{{route('comics.index')}}" class="back btn btn-secondary">Modifica</a>
-  <a href="{{route('comics.edit',$comic->id)}}" class="back btn btn-secondary">Go Back</a>
+  <a href="{{route('comics.edit',$comic->id)}}" class="back btn btn-secondary">Modifica</a>
+  <a href="{{route('comics.index')}}" class="back btn btn-secondary">Go Back</a>
 
 </div>
 
