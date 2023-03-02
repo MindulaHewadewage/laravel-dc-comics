@@ -58,6 +58,18 @@
 </section>
 </div>
 
+<div class="buttons d-flex justify-content-center">
+  <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+    @csrf
+    <button type="submit" class="btn btn-warning">Elimina</button>
+  </form>
+
+
+  <a href="{{route('comics.index')}}" class="back btn btn-secondary">Modifica</a>
+  <a href="{{route('comics.edit',$comic->id)}}" class="back btn btn-secondary">Go Back</a>
+
+</div>
+
 
 
 @endsection

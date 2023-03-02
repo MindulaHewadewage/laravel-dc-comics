@@ -13,7 +13,10 @@
             <p>{{$comic['title']}}</p>
         </div>
     @endforeach
+</div>
+<div class="add-comic-button d-flex justify-content-center">
     <a href="{{route('comics.create')}}" class="add-comic">Add Comic</a>
+
 </div>
 </div>
 
